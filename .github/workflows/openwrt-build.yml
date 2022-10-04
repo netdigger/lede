@@ -6,11 +6,12 @@
 name: OpenWrt-CI
 
 on:
-  push:
-    branches: 
-      - master
+  # push:
+  #  branches: 
+  #    - master
   release:
     types: [published]
+  workflow_dispatch:
     
 permissions:
   contents: read
